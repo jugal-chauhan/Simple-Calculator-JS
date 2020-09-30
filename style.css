@@ -9,14 +9,16 @@ body{
 	margin: 20px auto;	
 }
 #calculator{
+	border-radius:11px;
 	width: 320px;
 	height: 520px;
 	background-color: #eaedef;
 	margin: 0 auto;
 	top: 165px;
 	position: relative;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/* border-radius: 5px; */
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	box-shadow:5px 5px 10px rgb(32, 63, 32),-5px -5px 10px rgb(32, 63, 32);
 }
 #result{
 	height: 120px;
@@ -47,6 +49,11 @@ body{
 	border-width: 0;
 	font-weight: bold;
 	font-size: 15px;
+	transition:0.6s;
+}
+.operator:hover, .number:hover, .empty:hover{
+	/* border:1px solid black; */
+	background-color: #d4d7da;
 }
 .number, .empty{
 	background-color: #eaedef;
